@@ -1,0 +1,28 @@
+services:
+  # ── Backend API ──
+  - type: web
+    name: society-tracker-api
+    runtime: python
+    region: oregon
+    rootDir: backend
+    buildCommand: chmod +x build.sh && ./build.sh
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALGORITHM
+        value: HS256
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: 10080
+      - key: DATABASE_URL
+        value: sqlite:///./society_tracker.db
+      - key: MOCK_EMAIL
+        value: true
+      - key: UPLOAD_DIR
+        value: uploads
+      - key: MAX_FILE_SIZE_MB
+        value: 5
+      - key: FRONTEND_URL
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.12.0
