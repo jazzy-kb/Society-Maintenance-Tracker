@@ -10,7 +10,7 @@ Built with **FastAPI** (Python) + **React** (TypeScript) + **SQLite**.
 >
 > | | URL |
 > |---|---|
-> | **Frontend** | [`https://society-maintenance-tracker.vercel.app`](https://society-maintenance-tracker.vercel.app) |
+> | **Frontend** | https://society-maintenance-tracker-front.onrender.com|
 > | **Backend API** | [`https://society-tracker-api.onrender.com`](https://society-tracker-api.onrender.com/docs) |
 >
 > **Demo Credentials:** Admin — `admin@society.com` / `Admin@123` · Resident — `resident1@society.com` / `Resident@123`
