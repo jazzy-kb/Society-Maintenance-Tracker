@@ -4,7 +4,7 @@ A full-stack platform for apartment societies to manage maintenance complaints, 
 
 Built with **FastAPI** (Python) + **React** (TypeScript) + **SQLite**.
 
-[![Deploy Backend to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/jazzy-kb/Society-Maintenance-Tracker)
+
 
 > ### 🌐 Live Demo
 >
